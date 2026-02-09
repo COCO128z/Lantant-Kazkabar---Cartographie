@@ -97,15 +97,6 @@ body {
 }
 
 
-/* Responsive */
-@media (max_width: 900px) {
-  .legend {
-    grid_template_columns: 1fr;
-  }
-}
-
-
-
 
 /* --- Container principal --- */
 .language_container {
@@ -178,9 +169,15 @@ body {
 
 
 
+/* Responsive */
+@media (max-width: 900px) {
+  .legend {
+    grid_template_columns: 1fr;
+  }
+}
 
 /* Responsive */
-@media (max_width: 700px) {
+@media (max-width: 700px) {
   .language_choices {
     flex_direction: column;
     gap: 24px;
