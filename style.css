@@ -25,6 +25,7 @@ body {
   object_fit: cover;
   border_radius: 12px;
   margin_bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .legend {
@@ -33,10 +34,18 @@ body {
   gap: 32px;
 }
 
+/* Centrer le texte quand il n’y a que le h2 */
+.legend_item .legend_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centre verticalement */
+}
+
 
 .legend_item {
   display: flex;                 /* Picto à gauche, texte à droite */
-  align-items: flex-start;       /* Aligne le haut du picto avec le texte */
+  flex-direction: row;
+  align-items: center;      
   gap: 14px;                     /* Espace entre picto et texte */
   margin-bottom: 20px;           /* Espacement entre les items */
 }
@@ -98,60 +107,77 @@ body {
 
 
 
-/* Page choix de langue */
-
+/* --- Container principal --- */
 .language_container {
-  min_height: 100vh;
+  min-height: 100vh;
   display: flex;
-  flex_direction: column;
-  align_items: center;
-  justify_content: center;
-  background_color: #f9f2e5;
+  flex-direction: column;   /* vertical */
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f2e5;
   padding: 40px 20px;
-  text_align: center;
+  text-align: center;
 }
 
+/* Logo */
 .logo {
   width: 140px;
-  margin_bottom: 30px;
+  margin-bottom: 30px;
 }
 
+/* Titre */
 .language_title {
   color: #e8471b;
-  font_weight: 700;
-  letter_spacing: 0.08em;
-  margin_bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
+/* Choix langue vertical */
 .language_choices {
   display: flex;
-  gap: 40px;
+  flex-direction: column;  /* vertical */
+  gap: 30px;               /* espace entre FR et EN */
+  align-items: center;
 }
 
+/* Carte / bouton langue */
 .language_card {
-  text_decoration: none;
-  color: #000000;
   display: flex;
-  flex_direction: column;
-  align_items: center;
+  align-items: center;
+  gap: 12px;               /* espace entre drapeau et texte */
   padding: 20px 30px;
-  border_radius: 14px;
-  transition: transform 0.2s ease;
+  border-radius: 14px;
+  border: 2px solid #e8471b;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .language_card:hover {
   transform: scale(1.05);
+  background-color: #e8471b;
+  color: white;
 }
 
+/* Drapeaux */
 .language_flag {
   width: 60px;
-  margin_bottom: 12px;
+  height: auto;
 }
 
+/* Texte bouton */
 .language_name {
-  font_weight: 700;
-  letter_spacing: 0.06em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
+
+
+
+
 
 /* Responsive */
 @media (max_width: 700px) {
@@ -160,4 +186,52 @@ body {
     gap: 24px;
   }
 }
+
+
+
+/* --- Footer global --- */
+.site_footer {
+  background-color: #f9f2e5;
+  color: black;
+  font-family: "your-font-family", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e8471b;
+}
+
+/* Langues côte à côte */
+.language_footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px; /* espace entre les langues et le logo */
+}
+
+.language_footer a {
+  text-decoration: none;
+  color: #e8471b;
+  transition: color 0.2s ease;
+}
+
+.language_footer a:hover {
+  color: #000000;
+}
+
+/* Logo + texte */
+.site_footer .footer_bottom .footer_logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.site_footer .footer_bottom p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+
 
