@@ -186,15 +186,15 @@ body {
   }
 
   .map_title {
-    font-size: 1.6rem;
+    font-size: 8rem;
   }
 
   .legend h2 {
-    font-size: 1.2rem;
+    font-size: 5rem;
   }
 
   .legend p {
-    font-size: 1rem;
+    font-size: 4rem;
   }
 }
 
