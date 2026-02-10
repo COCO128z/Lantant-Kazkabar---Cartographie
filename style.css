@@ -31,6 +31,35 @@ body {
   padding-bottom: 30px;
 }
 
+/* --- Overlay carte plein écran --- */
+.map_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.map_overlay img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: #f9f2e5;
+}
+
+/* Curseur pour montrer que c’est cliquable */
+.map_image {
+  cursor: zoom-in;
+}
+
+
 .legend {
   display: grid;
   grid_template_columns: repeat(3, 1fr);
@@ -186,9 +215,11 @@ body {
     gap: 24px;
   }
 
-  .map_image{
-    max_width: 450px;
-  }
+  .map_image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
   .map_title {
     font-size: 2rem;

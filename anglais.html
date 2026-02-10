@@ -18,8 +18,13 @@
 
     <h1 class="map_title">Lantant Kazkabar</h1>
 
-    <!-- Map Image -->
-    <img src="images/cartographie.png" alt="Map illustration" class="map_image">
+    <!-- Image de la carte -->
+    <img
+  src="images/cartographie.png"
+  alt="Illustration de la carte"
+  class="map_image"
+  id="mapImage"
+    />
 
     <!-- Legend -->
     <div class="legend">
@@ -203,6 +208,24 @@
   </div>
 
 </footer>
+
+
+<div class="map_overlay" id="mapOverlay">
+  <img src="images/cartographie.png" alt="Carte en plein écran">
+</div>
+
+<script>
+  const mapImage = document.getElementById("mapImage");
+  const mapOverlay = document.getElementById("mapOverlay");
+
+  mapImage.addEventListener("click", () => {
+    mapOverlay.style.display = "flex";
+  });
+
+  mapOverlay.addEventListener("click", () => {
+    mapOverlay.style.display = "none";
+  });
+</script>
 
 
 </body>
