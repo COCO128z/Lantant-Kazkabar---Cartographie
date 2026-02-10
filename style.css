@@ -68,7 +68,7 @@ body {
 .legend_content h2 {
   font-weight: 700;             /* Bold */
   text-transform: uppercase;    /* Majuscules */
-  color: yellowgreen;               /* Couleur principale */
+  color: #e8471b ;               /* Couleur principale */
   font-size: 1.2rem;           /* Ajustable */
   margin: 0 0 4px 0;            /* Marge sous le titre */
 }
@@ -191,18 +191,18 @@ body {
   }
 
   .map_title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .legend h2 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .legend p {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
-  .legend_picto{
+  .legend_picto img {
     width: 80px;
   }
 }
