@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "valnera-variable", sans-serif;
     font-variation-settings: "DSTN" 0, "ROTN" 0, "wght" 400;
@@ -186,137 +192,13 @@ p {
 
 .footer p {
     color: #fff6ee;
->>>>>>> 113201ebb0931efeb6390179476043762714039a
 }
 
 
 
 
-<<<<<<< HEAD
-.legend_title {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #e8471b;
-  font-size: 0.95rem;
-  margin-bottom: 4px; /* petit espace entre nom et description */
-}
-
-.legend_description {
-  font-weight: 400;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: #000000;
-}
 
 
-
-/* --- Container principal --- */
-.language_container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;   /* vertical */
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f2e5;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-/* Logo */
-.logo {
-  width: 140px;
-  margin-bottom: 30px;
-}
-
-/* Titre */
-.language_title {
-  color: #e8471b;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-/* Choix langue vertical */
-.language_choices {
-  display: flex;
-  flex-direction: column;  /* vertical */
-  gap: 30px;               /* espace entre FR et EN */
-  align-items: center;
-}
-
-/* Carte / bouton langue */
-.language_card {
-  display: flex;
-  align-items: center;
-  gap: 12px;               /* espace entre drapeau et texte */
-  padding: 20px 30px;
-  border-radius: 14px;
-  border: 2px solid #e8471b;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-}
-
-.language_card:hover {
-  transform: scale(1.05);
-  background-color: #e8471b;
-  color: white;
-}
-
-/* Drapeaux */
-.language_flag {
-  width: 60px;
-  height: auto;
-}
-
-/* Texte bouton */
-.language_name {
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-
-
-
-/* Responsive tablette */
-@media (max-width: 450px) {
-  .legend {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Responsive mobile */
-@media (max-width: 450px) {
-  .language_choices {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .map_image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-  .map_title {
-    font-size: 2rem;
-  }
-
-  .legend h2 {
-    font-size: 1.5rem;
-  }
-
-  .legend p {
-    font-size: 1rem;
-  }
-
-  .legend_picto img {
-    width: 80px;
-  }
-=======
 /* PAGE LISTE DES PROJETS */
 .project-list {
     padding: 60px 40px;
@@ -409,56 +291,12 @@ p {
     .project-grid {
         grid-template-columns: 1fr;
     }
->>>>>>> 113201ebb0931efeb6390179476043762714039a
 }
 
 
 
 
-<<<<<<< HEAD
-/* --- Footer global --- */
-.site_footer {
-  background-color: #f9f2e5;
-  color: black;
-  font-family: "your-font-family", sans-serif;
-  text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #e8471b;
-}
 
-/* Langues côte à côte */
-.language_footer {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px; /* espace entre les langues et le logo */
-}
-
-.language_footer a {
-  text-decoration: none;
-  color: #e8471b;
-  transition: color 0.2s ease;
-}
-
-.language_footer a:hover {
-  color: #000000;
-}
-
-/* Logo + texte */
-.site_footer .footer_bottom .footer_logo {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.site_footer .footer_bottom p {
-  margin: 0;
-  font-weight: 400;
-  font-size: 0.9rem;
-=======
 
 
 /* PROJET */
@@ -838,7 +676,6 @@ p {
     .project-subtitle {
         font-size: 1.2rem;
     }
->>>>>>> 113201ebb0931efeb6390179476043762714039a
 }
 
 
